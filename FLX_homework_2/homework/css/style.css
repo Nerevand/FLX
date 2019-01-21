@@ -36,16 +36,16 @@
 }
 
 @media screen {    
-    .tm-box-bg-title:hover {    /*2*/
+    .tm-box-bg-title:hover { 
         background-color: rgb(28, 153, 255);
         color: #fff;
         font-weight: bold;
     }
-    p:first-letter {  /*3*/
+    p:first-letter {
         color: #87CEFA;
         font-size: 30px; 
     }
-    .flex-2-col {   /*4*/
+    .flex-2-col { 
         display: flex;
     }
     .flex-2-col .tm-team-description-container {
@@ -63,7 +63,7 @@
         box-shadow: 0px 0px 15px -1px #000000;
     }
     section::before,
-    .tm-main-content::before {   /*5*/
+    .tm-main-content::before { 
         content: '';
         position: absolute; 
         width: 0;
@@ -71,14 +71,14 @@
         border-top: 30px solid rgb(28, 153, 255);
 	    border-right: 110px solid transparent;	
     }
-    .carousel-item > .carousel-content > .flex-item > h2.tm-section-title {  /*6*/
+    .carousel-item > .carousel-content > .flex-item > h2.tm-section-title {  
         color: gainsboro;
         letter-spacing: 5px;
     } 
-    h2 + p {  /*7*/
+    h2 + p { 
         font-style: italic;
     }
-    .tm-main-content > section > .flex-2-col > .tm-team-description-container p { /* 8 */
+    .tm-main-content > section > .flex-2-col > .tm-team-description-container p {
         text-indent: 26px;
         line-height: 35px;
     }        
@@ -89,7 +89,7 @@
     .flex-2-col .tm-team-description-container h2.tm-section-title {
         color: #15dbdb;
     }
-    .heading ol li a { /*9*/
+    .heading ol li a {
         color: #000;
     }
     .heading ol li a:visited { 
@@ -106,7 +106,7 @@
         color: #15dbdb;
         border-bottom: 1px solid #15dbdb;
     }
-    .blocks > .tm-content-box > .gallery-container > .box:nth-child(even){ /*10*/
+    .blocks > .tm-content-box > .gallery-container > .box:nth-child(even){ 
         background-color: #e7e7e7;
     }
     .tm-content-box ul li:nth-child(n + 1){ 
@@ -121,7 +121,7 @@
     .boxes .box p::first-letter {
         color: #000;
     }
-    .submit-btn {   /*11*/
+    .submit-btn {
         background-color: rgba(255, 0, 0, 0) !important;
         color: #9fd8fb;
         border: 1px solid #9fd8fb;
@@ -137,7 +137,7 @@
          font-weight: bold;
          color: red;
      }
-     .tm-nav-item:hover { /*12*/
+     .tm-nav-item:hover { 
         background-color: #cdcdcd;
      }
 }
