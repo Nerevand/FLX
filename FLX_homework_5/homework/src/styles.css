@@ -56,7 +56,7 @@ body{
 }
 .lines div{ 
   width: 20px;
-  border: 1px solid rgb(255, 255, 255);
+  border: 1px solid #fff;
   margin-top: 1vw;
 }
 .main{ 
@@ -77,7 +77,12 @@ body{
 .block:nth-child(odd){
   flex-direction: row-reverse;
 }
-.text-side,
+.text-side{
+  width: 50%;
+  height: 100%;
+  cursor: pointer;
+
+}
 .img-side{
   width: 50%;
   height: 100%;
@@ -111,7 +116,7 @@ body{
   margin-top: 1vw; 
   font-size: 1vw;
   line-height: 1.5vw;
-  color: rgba(255, 255, 255, 0.7);
+  color: #fff;
 }
 .date{
   position: absolute;
@@ -220,6 +225,12 @@ body{
   display: flex;
   flex-direction: column;
 }
+.aside:after{
+  content: "author: Roman Krychkovskyy";
+  font-size: 2vw;
+  color: #fff;
+  display: none;
+}
 .news {
   background-color: #fff;
   display: flex;
@@ -308,7 +319,7 @@ body{
    }
    .text-side{
     width: 100%;
-    height: 50%;
+    height: 45%;
     align-items: center;
     justify-content: flex-start;
    }
@@ -335,7 +346,7 @@ body{
    .date{ 
      position: relative;
      font-size: 5vw;
-     margin-top: 11vw;
+     margin-top: 5vw;
    }
    .month{
      font-size: 3.5vw;
@@ -343,7 +354,7 @@ body{
    .block:nth-child(odd) .date{
     position: relative;
     font-size: 5vw;
-    margin-top: 11vw;
+    margin-top: 5vw;
   }
   .post-5{
     width: 96.5%;
@@ -365,7 +376,7 @@ body{
   }
   .title-date{
     position: relative; 
-    margin-top: 1vw;
+    margin-top: 7vw;
     font-size: 5vw ; 
     color: rgba(255, 255, 255, 0.2);
     display: flex;
@@ -373,7 +384,7 @@ body{
   }
   .img-side{
    width: 100%;
-   height: 50%;
+   height: 55%;
   }
   .footer{
     width: 98vw;
@@ -435,7 +446,7 @@ body{
   }
   .text-side{
    width: 100%;
-   height: 50%;
+   height: 45%;
    align-items: center;
    justify-content: flex-start;
   }
@@ -450,6 +461,12 @@ body{
   }
   .block-2 .text-side{
     height: 45%;
+  }
+  .block-1 .img-side{
+    height: 60%;
+  }
+  .block-1 .text-side{
+    height: 40%;
   }
   .title{
     width: 80%;
@@ -468,19 +485,27 @@ body{
   .date{ 
     position: relative;
     font-size: 9vw;
-    margin-top: 15vw;
+    margin-top: 10vw;
   }
   .block:nth-child(odd) .date{
    position: relative;
    font-size: 9vw;
-   margin-top: 15vw;
+   margin-top: 2vw;
  }
+ .block-3:nth-child(odd) .date{
+  position: relative;
+  font-size: 9vw;
+  margin-top: 15vw;
+}
  .month{
    font-size: 5vw;
  } 
  .block-2 .date{
   margin-top: 14vw;
- }
+ } 
+ .block-4 .date{
+  margin-top: 7vw;
+ } 
  .post-5{
    width: 98%;
    height: 60vw;
