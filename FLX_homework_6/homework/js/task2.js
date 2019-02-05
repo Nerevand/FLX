@@ -1,10 +1,10 @@
-let price = prompt('price', '0');
-let discount = prompt('discount', '0'); 
+let price = prompt('price', '0').trim();
+let discount = prompt('discount', '0').trim(); 
 if(isNaN(price/2) || isNaN(discount/2) || price === null || discount === null){
     alert(`Invalid input data`);
 } else if(price < 0 || price > 9999999){
     alert(`Invalid input data`);
-} else if(discount < 0 || discount > 99){
+} else if(discount < 0 || discount > 99 || price.length === 0 || discount.length === 0){
     alert(`Invalid input data`);
 } else {
     result();
