@@ -5,6 +5,8 @@ if (value1 === null || value2 === null || value3 === null) {
     alert(`Invalid data`);
 } else if(isNaN(value1/2) || isNaN(value2/2) || isNaN(value3/2)){
     alert(`Invalid data`);
+} else if(value1 === 0 || value1 === '0') {
+    alert('Invalid data. a = 0 - it is not quadratic equation');
 } else {
     result(value1, value2, value3);
 }
