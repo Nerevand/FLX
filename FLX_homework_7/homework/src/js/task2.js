@@ -24,7 +24,7 @@ if (play) {
             attempts--;
             maxPrize = Math.floor(maxPrize/2);
         }
-        if (attempts === 0 && guess === false) {
+        if (attempts === 0 && !guess) {
             alert('Thank you for a game. Your prize is ' + totalPrize);
             let playAgain = confirm(`Do you want to play again?`);
             if (playAgain) {
