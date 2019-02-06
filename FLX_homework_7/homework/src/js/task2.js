@@ -1,10 +1,8 @@
 let attempts = 3;
 let totalPrize = 0;
 let again = 0;
-
 const step = 1;
 const milion = 1000000;
-
 let maxPrize = 10; 
 let maxNumber = 6;
 let guess = false;
