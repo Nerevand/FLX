@@ -8,7 +8,7 @@ var superGame = false;
 var maxNumber = 6;
 var guess = false;
 var play = confirm('Do you want to play a game?');
-var asd = false;
+var oneMore = false;
 if (play) {
     var randomNumber = Math.ceil(Math.random() * maxNumber - step);
     while (attempts > 0) {
@@ -20,8 +20,8 @@ if (play) {
             totalPrize += maxPrize;
             guess = true;
             randomNumber = Math.ceil(Math.random() * maxNumber - step);
-            asd = confirm('one more?');
-            if (asd) {
+            oneMore = confirm('one more?');
+            if (oneMore) {
                 attempts = 3;
                 if (superGame) {
                     maxPrize = 30;
