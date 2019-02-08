@@ -28,6 +28,8 @@ if (play) {
                 } else {
                     maxPrize = 10;
                 }
+            } else {
+                attempts = 0;
             }
         } else {
             attempts--;
