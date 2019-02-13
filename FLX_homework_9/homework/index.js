@@ -117,7 +117,7 @@ showFormattedDate(new Date('2019-01-27T01:10:00'));
 
 /*task-10*/
 function isEvenYear(value) {
-    if (value.getFullYear() % 4 === 0) {
+    if (value.getFullYear() % 2 === 0) {
         return true;
     } else {
         return false;
