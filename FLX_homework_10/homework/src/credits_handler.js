@@ -22,12 +22,12 @@ function userCard(value) {
             };
         },
         putCredits: credit => {
-            let text = `Received credits`;
+            const text = `Received credits`;
             balance += credit;
             historyBox(text, balance);
         },
         takeCredits: function (credit) {
-            let text = `Withdrawal of credits`;
+            const text = `Withdrawal of credits`;
             if (balance > credit && transactionLimit > credit) {
                 balance -= credit;
                 historyBox(text, balance);
@@ -36,7 +36,7 @@ function userCard(value) {
             }
         },
         setTransactionLimit: limit => {
-            let text = `Transaction limit change`;
+            const text = `Transaction limit change`;
             transactionLimit = limit;
             historyBox(text, limit);
         },
