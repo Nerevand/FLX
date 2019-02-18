@@ -12,44 +12,49 @@ function userCard(value) {
             operationTime: new Date().toLocaleString('en-GB')
         });
     }
-    return {
-        getCardOptions: () => {
-            return {
-                key,
-                balance,
-                transactionLimit,
-                historyLogs
-            };
-        },
-        putCredits: credit => {
-            const text = `Received credits`;
-            balance += credit;
+    let getCardOptions = () => {
+        return {
+            key,
+            balance,
+            transactionLimit,
+            historyLogs
+        };
+    };
+    let putCredits = (credit) => {
+        const text = `Received credits`;
+        balance += credit;
+        historyBox(text, balance);
+    };
+    let takeCredits = (credit) => {
+        const text = `Withdrawal of credits`;
+        if (balance > credit && transactionLimit > credit) {
+            balance -= credit;
             historyBox(text, balance);
-        },
-        takeCredits: function (credit) {
-            const text = `Withdrawal of credits`;
-            if (balance > credit && transactionLimit > credit) {
-                balance -= credit;
-                historyBox(text, balance);
-            } else {
-                console.error(`Sorry, but you can't do that. Your credit limit: ${transactionLimit}`);
-            }
-        },
-        setTransactionLimit: limit => {
-            const text = `Transaction limit change`;
-            transactionLimit = limit;
-            historyBox(text, limit);
-        },
-        transferCredits: function (value, card) {
-            let credits = value + tax * value;
-
-            if (balance >= credits && transactionLimit >= credits) {
-                this.takeCredits(credits);
-                card.putCredits(value);
-            } else {
-                console.error(`Sorry, but you can't do that. Your credit limit: ${transactionLimit}`);
-            }
+        } else {
+            console.error(`Sorry, but you can't do that. Your credit limit: ${transactionLimit}`);
         }
+    };
+    let setTransactionLimit = (limit) => {
+        const text = `Transaction limit change`;
+        transactionLimit = limit;
+        historyBox(text, limit);
+    };
+    let transferCredits = (value, card) => {
+        let credits = value + tax * value;
+
+        if (balance >= credits && transactionLimit >= credits) {
+            this.takeCredits(credits);
+            card.putCredits(value);
+        } else {
+            console.error(`Sorry, but you can't do that. Your credit limit: ${transactionLimit}`);
+        }
+    };
+    return {
+        getCardOptions,
+        putCredits,
+        takeCredits,
+        setTransactionLimit,
+        transferCredits
     };
 }
 
