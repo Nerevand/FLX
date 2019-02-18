@@ -1,9 +1,9 @@
 function userCard(value) {
     let balance = 100;
     let transactionLimit = 100;
-    let historyLogs = [];
+    const historyLogs = [];
+    const tax = 0.005;
     let key = value;
-    let tax = 0.005;
 
     let historyBox = (text, balance) => {
         return historyLogs.push({
