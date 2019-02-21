@@ -1,0 +1,78 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+section {
+    width: 100%;
+}
+#root {
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    width: 60%;     
+    border: 2px solid rgb(0, 0, 0);
+}
+.header > h1 {
+    text-align: center;
+}
+.inpts{
+    margin-left: 5%;
+    width: 90%;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2%;
+}
+.area {   
+    width: 90%;
+    height: 1vw;
+    padding: 0.4vw;
+    margin-left: 1%;
+}
+.cat-btn {
+    width: 1vw; 
+    margin-right: 4%;
+    height: 1vw; 
+    cursor: pointer;
+}
+.add {  
+    margin-left: -0.85vw;
+    margin-top: -0.38vw;
+    font-size: 2.8vw;
+}
+.todo-list {
+    margin-left: 5%;
+    width: 90%;
+    padding: 0;
+    list-style-type: none;
+}
+li{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 0.5vw;
+}
+.done,
+.close { 
+    font-size: 2.8vw;
+    cursor: pointer; 
+}
+span{
+    margin: 0;
+    width: 95%;
+    margin-top: 0.3vw;
+    cursor: move; 
+    font-size: 2vw;
+}
+footer{ 
+    margin-top: 10vw;
+    margin-bottom: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cat-icon{
+    width: 10%; 
+}
